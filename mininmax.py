@@ -1,4 +1,6 @@
 from jogo_da_velha import branco, token, verifica_ganhador
+#Para iniciar Win + shift + P escolhe o interpretador da pasta python -> primeiro arquivo python
+#Comando terminal para executar o jogo .\python\python.exe index.py
 
 score = {
     "EMPATE": 0,
@@ -24,9 +26,9 @@ def movimento_ia(board, jogador):
     melhor_movimento = None
 
     for possibilidade in possibilidades:
-        board[possibilidade[0], possibilidade[1]] = token[jogador]
+        board[possibilidade[0]] [possibilidade[1]] = token[jogador]
         valor = minmax(board, jogador)
-        board[possibilidade[0], possibilidade[1]] = branco
+        board[possibilidade[0]] [possibilidade[1]] = branco
         if melhor_valor is None:
             melhor_valor = valor
             melhor_movimento = possibilidade
@@ -55,9 +57,9 @@ def minmax(board, jogador):
 
 
     for possibilidade in possibilidades:
-        board[possibilidade[0], possibilidade[1]] = token[jogador]
+        board[possibilidade[0]] [possibilidade[1]] = token[jogador]
         valor = minmax(board, jogador)
-        board[possibilidade[0], possibilidade[1]] = branco
+        board[possibilidade[0]] [possibilidade[1]] = branco
         if melhor_valor is None:
             melhor_valor = valor
         elif jogador == 0:
