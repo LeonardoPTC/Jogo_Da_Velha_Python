@@ -1,6 +1,7 @@
 from jogo_da_velha import branco, token, verifica_ganhador
 #Para iniciar Win + shift + P escolhe o interpretador da pasta python -> primeiro arquivo python
 #Comando terminal para executar o jogo .\python\python.exe index.py
+# Python Versão 3.12
 
 score = {
     "EMPATE": 0,
